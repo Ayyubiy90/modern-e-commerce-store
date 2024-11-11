@@ -1,0 +1,32 @@
+/* Import Tailwind CSS base styles, components, and utilities */
+@tailwind base; /* Apply the base styles provided by Tailwind CSS */
+@tailwind components; /* Include the component styles provided by Tailwind CSS */
+@tailwind utilities; /* Include the utility classes provided by Tailwind CSS */
+
+/* Define custom styles within the base layer */
+@layer base {
+  body {
+    /* Apply antialiased font smoothing and set the text color to gray-900 */
+    @apply antialiased text-gray-900;
+  }
+}
+
+/* Define custom component styles within the components layer */
+@layer components {
+  .btn {
+    /* Create a button class with the following styles:
+       - Display as inline-flex to align items horizontally
+       - Center items both vertically and horizontally
+       - Add padding on the x-axis (px-4) and y-axis (py-2)
+       - Set border properties to be transparent
+       - Use a small font size and medium font weight
+       - Add rounded corners with a medium radius
+       - Apply a shadow for depth
+       - Set text color to white
+       - Set background color to indigo-600
+       - Change background color on hover to indigo-700
+       - Remove default outline on focus
+       - Add a focus ring with specified colors and offsets */
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+}
