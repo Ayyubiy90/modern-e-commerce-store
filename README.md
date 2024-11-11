@@ -26,7 +26,7 @@ A modern, fully-featured e-commerce platform built with React, TypeScript, and T
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/modern-store.git
+git clone https://github.com/Ayyubiy90/modern-e-commerce-store.git
 cd modern-store
 ```
 
