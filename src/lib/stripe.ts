@@ -1,8 +1,11 @@
 // Import the loadStripe function from the Stripe.js library to handle Stripe integration
 import { loadStripe } from '@stripe/stripe-js';
 
-// Replace with your Stripe publishable key for authentication with Stripe services
-export const stripePromise = loadStripe('pk_test_your_publishable_key');
+// Load the Stripe publishable key from the environment variable
+const stripePublishableKey = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
+
+// Initialize Stripe with the publishable key
+export const stripePromise = loadStripe(stripePublishableKey);
 
 // Asynchronous function to create a checkout session for the provided items
 export async function createCheckoutSession(items: any[]) {
